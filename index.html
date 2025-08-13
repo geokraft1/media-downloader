@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🎵 Media Downloader 🎬</h1>
+    <div class="controls">
+      <select id="languageSelect">
+        <option value="ka">ქართული</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+      </select>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="input-section">
+      <input type="text" id="videoURL" placeholder="ჩაწერე ბმული..." />
+      <div class="format-quality">
+        <select id="format">
+          <option value="mp4">MP4 (ვიდეო)</option>
+          <option value="mp3">MP3 (აუდიო)</option>
+        </select>
+        <select id="quality">
+          <option value="highest">ყველაზე მაღალი ხარისხი</option>
+          <option value="lowest">დაბალი ხარისხი</option>
+        </select>
+      </div>
+      <button id="previewBtn">👁️ გადახედე</button>
+      <button id="downloadBtn">⬇️ ჩამოტვირთე</button>
+    </div>
+
+    <div id="previewContainer"></div>
+    <div class="progress-bar"><div id="progress"></div></div>
+    <div id="status"></div>
+
+    <section id="historySection">
+      <h2>ჩამოტვირთვის ისტორია</h2>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

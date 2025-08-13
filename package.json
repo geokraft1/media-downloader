@@ -1,0 +1,18 @@
+{
+  "name": "media-downloader",
+  "version": "1.0.0",
+  "description": "სრულფასოვანი მედია ჩამოტვირთვის საიტი YouTube და TikTok-ისთვის",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["media","downloader","youtube","tiktok","video","audio"],
+  "author": "Dachi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "ytdl-core": "^4.11.1",
+    "axios": "^1.6.0"
+  }
+}
